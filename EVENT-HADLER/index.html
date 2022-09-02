@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Event World</title>
+            <style>
+                .contents {
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                border: 2px solid black;
+                padding: 15px;
+                text-align: center;
+                }
+                
+                #generateButton {
+                margin-top: 5px;
+                margin-bottom: 15px;;
+                }
+            </style>
+    </head>
+    <body onload="welcome()">
+        <div class="contents">
+            <button id="incrementButton" onclick="increment()">Tekan Aku :)</button>
+            <h3>Kamu sudah menekan tombol di atas sebanyak <span id="count">0</span></h3>
+        </div>
+            
+        <script>
+            function welcome(){
+                alert("kun fayakun HTML munculah!!");
+                const contents = document.querySelector(".contents");
+                contents.removeAttribute('hiden');
+            }
+            // document.body.onload = welcome;
+
+            function increment(){
+                document.getElementById('count').innerText++;
+
+                if (document.getElementById('count').innerText == 7) {
+                    const hiddenElement = document.createElement('h4');
+                    hiddenElement.innerText = "Anda menemukan hadiah tersembunyi, SELAMAT!!";
+                    const image = document.createElement('img');
+                    image.setAttribute('src', 'https://i.ibb.co/0V49VRZ/catto.jpg');
+                    const contents = document.querySelector(".contents");
+                    contents.appendChild(hiddenElement).appendChild(image)
+                }
+            }
+            // document.getElementById('incrementButton').onclick = increment;
+        </script>
+    </body>
+</html>

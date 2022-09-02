@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    background-color: #072A87;
+    height: 140px;
+    width: 100%;
+    animation-name: opacity;
+    animation-duration: 1s;
+}
+
+.lambang--desa{
+    background-color: #E8E8E8;
+    display: flex;
+    align-items: center;
+    padding: 10px auto;
+    margin: 20px auto;
+    width: 300px;
+    border-radius: 10px;
+    animation-name: pop-up;
+    animation-duration: .4s;
+}
+
+.container--lambang{
+    margin: 4px auto;
+}
+
+.rambut{
+    position: absolute;
+    animation-name: pop-up;
+    animation-duration: .4s;
+}
+
+.rambut svg{
+    width: 180px;
+    margin-top: -20px ;
+}
+
+.kanan--rambut{
+    margin-left: 68%;
+}
+
+.kanan--rambut svg{
+    margin-right: 2%;
+}
+
+.kiri--rambut{
+    margin-left: 20%;
+}
+
+/* bulet--lambang */
+.container--bulet{
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+}
+
+.bulet{
+    width: 13px;
+    height: 13px;
+    border: 2px black solid;
+    border-radius: 50%;
+    margin: 4px 0;
+}
+
+/* suriken */
+
+.suriken{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4%;
+}
+
+/* .kanan--suriken{
+    margin-left: 8%;
+} */
+
+.kanan--suriken .kanan--satu{
+    display: absolute;
+    margin-left: 80px;
+    margin-bottom: -40px;
+}
+
+.kanan--suriken .kanan--tiga{
+    margin-left: 60px;
+}
+
+/* form */
+form{
+    display: flex;
+    justify-content: space-around;
+    width: 420px;
+    background-color: #E8E8E8;
+    border-radius: 20px;
+    margin-left: -80px;
+
+}
+
+form section{
+    display: flex;
+    flex-direction: column;
+    margin:40px 0 ;
+}
+
+form .form--cover{
+    display: flex;
+    margin: -12px ;
+}
+
+input[type=submit]{
+    transform: rotate(-90deg);
+    width: 180px;
+    height: 40px;
+    margin-top: 94px;
+    margin-right: -60px;
+    margin-left: -40px;
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
+    background-color: black;
+    border-radius: 16px;
+}
+
+input[type=text]{
+    height: 30px;
+    width: 200px;
+    border: .5px solid black ;
+    border-radius: 12px;
+    padding: 4px 10px ;
+}
+
+label{
+    margin: 8px 0;
+    font-weight: 400;
+}
+
+.cover--bulet{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 8px 0 ;
+}
+
+/* conten atas */
+.conten--atas{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+
+.kiri--suriken .kiri--satu{
+    display: absolute;
+    margin-left: -60px;
+    margin-bottom: -30px;
+}
+
+.kiri--suriken .kiri--tiga{
+    margin-top: -10px;
+    margin-left: -60px;
+}
+
+/* conten bawah */
+
+.conten--bawah{
+    margin: 80px 20px ;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gulungan{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+
+}
+
+
+.conten--bawah h1{
+    margin: 0 120px;
+    padding: 8px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    border-top: 2px solid black ;
+    border-right: 2px solid black ;
+    border-left: 2px solid black ;
+    border-radius: 10px 10px 0 0 ;
+}
+
+.isi--gulungan{
+    height: 300px;
+    margin: 0 20px ;
+    border: 2px solid black;
+    border-radius:0 0 20px 20px;
+    border-top: none;
+    overflow: auto;
+}
+
+.gulungan--dua{
+    margin-top: 40px;
+}
+
+/* mobile */
+@media (max-width: 768px){
+    .conten--bawah{
+        display: flex;
+        flex-direction: column;
+    }
+    .conten--bawah .gulungan{
+        margin: 10px auto;
+    }
+    nav{
+        height: 100px;
+    }
+    .kiri--rambut{
+        margin-left: 8%;
+    }
+    .rambut svg{
+        width: 100px;
+        margin-top: -80px ;
+    }
+    .lambang--desa{
+        width: 200px;
+    }
+    .container--bulet .bulet{
+        width: 10px;
+        height: 10px;
+    }
+    .container--lambang svg{
+        width: 40px;
+    }
+    .suriken{
+        display: none;
+    }
+    form{
+        margin: 0 auto;
+    }
+}
+
+/* item */
+
+.list-buku{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 8px 20px;
+}
+
+.item{
+    margin: 8px;
+}
+
+.item h6{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.item p{
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+}
+
+.action{
+    display: flex;
+    align-items: center;
+    margin: 0 8px;
+}
+
+.action svg{
+    width: 20;
+}
+
+/* check */
+.check-button {
+    width: 40px;
+    height: 40px;
+
+    background: url('../assets/check-outline.svg');
+    background-size: contain;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.check-button:hover {
+    background: url('../assets/check-solid.svg');
+    background-size: contain;
+}
